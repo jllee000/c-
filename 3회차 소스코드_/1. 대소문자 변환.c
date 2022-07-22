@@ -5,8 +5,8 @@
 
 int main() {
   char alpha[1000] = "";
-  gets(alpha);
-  int len = strlen(alpha);
+  fgets(alpha,1000,stdin);
+  int len = strlen(alpha)-1;
   
   for (int i=0; i<len; i++) {
     if ((alpha[i] >= 'a') && (alpha[i] <= 'z')) {
