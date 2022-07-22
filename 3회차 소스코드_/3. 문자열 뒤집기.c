@@ -5,8 +5,8 @@
 
 int main() {
   char alpha[1000] = "";
-  gets(alpha);
-  int len = strlen(alpha);
+  fgets(alpha,1000,stdin);
+  int len = strlen(alpha)-1;
   for (int i=len; i>0; i--) {
     printf("%c", alpha[i-1]);
   }
