@@ -5,8 +5,8 @@
 
 int main() {
   char alpha[1000] = "";
-  gets(alpha);
-  int len = strlen(alpha);
+  fgets(alpha,1000,stdin);
+  int len = strlen(alpha)-1;
   int check = 0;
   // 홀수냐 짝수냐에 따라 다른듯?
   if (len % 2 == 0) { //짝수일때
