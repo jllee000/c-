@@ -6,7 +6,7 @@
 int main() {
   char real[100000] = ""; // 원본
   char fake[100000] = ""; // 띄어쓰기뺌
-  fgets(real,1000,stdin); 
+  fgets(real,100000,stdin); 
   int len = strlen(real)-1;
   for (int i=0; i<len; i++) {
     if (real[i] != ' ') {
