@@ -4,7 +4,7 @@
 
 int main() {
   int C,R;
-  scanf("%d %d", &C, &R); // 막대기 크기와 전체격자수
+  scanf("%d %d", &C, &R); // 전체격자수
   int arr[20][20] = {0};
   for (int i=1; i<=R; i++) {
     for (int j=1; j<=C; j++) {
