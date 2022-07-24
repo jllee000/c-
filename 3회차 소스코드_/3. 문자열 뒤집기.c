@@ -6,7 +6,7 @@
 int main() {
   char alpha[1000] = "";
   fgets(alpha,1000,stdin);
-  int len = strlen(alpha)-1;
+  int len = strlen(alpha);
   for (int i=len; i>0; i--) {
     printf("%c", alpha[i-1]);
   }
