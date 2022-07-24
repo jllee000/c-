@@ -10,8 +10,8 @@ int main() {
   int check = 0;
   // 홀수냐 짝수냐에 따라 다른듯?
   if (len % 2 == 0) { //짝수일때
-    for (int i=0; i<len/2; i++) {
-      if (alpha[i] == alpha[len-1-i]) {
+    for (int i=0; i<=len/2; i++) {
+      if (alpha[i] == alpha[len-i-1]) {
           check = 1;
       }
       else check = 0; 
@@ -21,9 +21,9 @@ int main() {
     if (len == 1)
       check = 1;
     else {
-      for (int i=0; i<len/2; i++) {
+      for (int i=0; i<=len/2; i++) {
         if (i != len-1-i) { // 중간 것이 아닐때
-          if (alpha[i] == alpha[len-1-i]) {
+          if (alpha[i] == alpha[len-i-1]) {
             check = 1;
           }
           else check = 0;
