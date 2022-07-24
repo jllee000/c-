@@ -23,8 +23,9 @@ int main() {
       }
     }
 
-    if (zero<4)
-      continue;
+    if (zero<4) {
+        continue;
+    }
     for (int i=0; i<4; i++) {
       arr[zero-i][j] = 1;
     }
@@ -34,7 +35,9 @@ int main() {
       for (int k =1; k<=C; k++) {
         if (arr[i][k] == 1) cnt++;
       }
-      if (cnt == C) score ++;
+      if (cnt == C) {
+          score ++;
+      }
     }
     if (ans < score) {
       ans = score;
