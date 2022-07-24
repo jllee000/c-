@@ -5,7 +5,7 @@
 int main() {
   int C,R;
   scanf("%d %d", &C, &R); // 전체격자수
-  int arr[20][20] = {0};
+  int arr[30][30] = {0,};
   for (int i=1; i<=R; i++) {
     for (int j=1; j<=C; j++) {
       scanf("%d", &arr[i][j]);
