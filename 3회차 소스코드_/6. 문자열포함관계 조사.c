@@ -9,8 +9,8 @@ int main() {
   fgets(alpha,1000,stdin);
   fgets(compare,1000,stdin);
   int result = 0;
-  int len1 = strlen(alpha)-1;
-  int len2 = strlen(compare)-1;
+  int len1 = strlen(alpha);
+  int len2 = strlen(compare);
   
   for (int i=0; i<len1; i++) {
     if (alpha[i] == compare[0]) //첫글자부터
